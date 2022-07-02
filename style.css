@@ -20,7 +20,7 @@ coloque nas sessões indicadas*/
 
 body {
 	box-sizing: border-box;
-	background-color: var(--cor-de-fundo);
+	/* background-color: var(--cor-de-fundo); */
 	font-family: var(--font);
 	margin: 0;
 	padding: 0;
@@ -48,17 +48,22 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+.tudo {
+	position: absolute;
+	background-image: url(assets/background-wall.jpg);
+	background-position: start;
+}
+
 /*Sección Menu*/
 
-section.menu {
-	background: var(--color1);
+.menu {
 	width: 100%;
-	position: fixed;
 	height: 15vh;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 3rem 0 3rem;
 	align-items: center;
+	position: fixed;
+	background: whitesmoke;
 }
 
 .menu__header {
@@ -67,12 +72,20 @@ section.menu {
 	align-items: center;
 	justify-content: space-between;
 	width: 18%;
+	/* background: #3d6598; */
+	margin-left: 5rem;
 }
 
+.menu__nav {
+	/* background: #9c690a; */
+	margin-right: 5rem;
+}
 .menu__list {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	width: 45vw;
+	/* background: #cde36b; */
 }
 
 .menu__list__item {
@@ -86,12 +99,61 @@ section.menu {
 
 /*Sección Title*/
 
-section.title {
+.title {
+	width: 100%;
+}
+/* background: #5d5395; */
+
+.title__div {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	/* background: #cde36b; */
+	margin: 10rem 5rem 0 5rem;
 }
 
+.title__profile {
+	width: 30%;
+	border-radius: 100%;
+}
+
+.title__bio {
+	font-size: 50px;
+}
+
+.title__subsection {
+	font-weight: 300;
+	color: #f5f5f5;
+}
+
+.title__network {
+	/* background: #a1e8cc; */
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 0;
+	margin-top: 50px;
+}
+
+.title__network__item {
+	margin-right: 30px;
+}
+
+.title__network__item a {
+	color: #f5f5f5;
+}
 /*Sección About*/
 
-section.about {
+.about {
+	background: #f5f5f5;
+	margin-top: 5rem;
+	padding: 5rem;
+}
+
+.about__paragraph {
+	width: 75%;
+	text-align: left;
+	line-height: 2em;
 }
 
 /*Sección Hobbies*/
