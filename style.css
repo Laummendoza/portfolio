@@ -15,7 +15,9 @@ coloque nas sessões indicadas*/
 	--color4: #495159;
 	--color5: #afcbff;
 	--color6: #0e1c36;
+	--color-icono: #3d72d6;
 	--font: "Montserrat", sans-serif;
+	--font1: "Dancing Script", cursive;
 }
 
 body {
@@ -36,6 +38,10 @@ a {
 	color: var(--cor-de-link);
 }
 
+i {
+	font-size: 1.5em;
+}
+
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
 Lo que es el BEM?
@@ -50,9 +56,9 @@ https://en.bem.info/methodology/quick-start/*/
 
 .tudo {
 	position: absolute;
-	background-image: url(assets/background-wall.jpg);
-
+	background-image: url(assets/background-degrade.jpg);
 	background-position: start;
+	background-size: cover;
 }
 
 /*Sección Menu*/
@@ -121,11 +127,12 @@ https://en.bem.info/methodology/quick-start/*/
 
 .title__bio {
 	font-size: 50px;
+	font-family: var(--font);
 }
 
 .title__subsection {
 	font-weight: 300;
-	color: #f5f5f5;
+	color: var(--color4);
 }
 
 .title__network {
@@ -141,7 +148,11 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__network__item a {
-	color: #f5f5f5;
+	color: var(--color4);
+}
+
+.title__container h2 {
+	color: #0b0b0b;
 }
 /*Sección About*/
 
@@ -179,31 +190,186 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .skills__box {
-	background: var(--color5);
+	background: var(--cor-de-fundo);
 	width: calc((100% - 10rem) / 4);
 	padding-top: 10%;
 }
 
+.skills__name {
+	color: var(--color4);
+}
+
 /*Sección Hobbies*/
 
-section.hobbies {
+.hobbies {
+}
+
+.hobbies__title {
+	text-align: center;
+	color: var(--cor-de-fundo);
+	font-size: 1.5em;
+	margin-top: 10rem;
+}
+
+.hobbies__line {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 5rem 5rem 0 5rem;
+}
+
+.hobbies__box {
+	background: var(--cor-de-fundo);
+	width: calc((100% - 10rem) / 4);
+	padding-top: 10%;
+}
+.hobbies__img {
+	width: 20px;
+	height: 30px;
+}
+
+.hobbies__name {
+	color: var(--color4);
 }
 
 /* Experiencia Académica*/
 
-section.academic {
+.academic {
+	margin: 5rem 5rem 0 5rem;
 }
 
+.academic__title {
+	text-align: center;
+	font-size: 1.5em;
+	color: var(--cor-de-fundo);
+}
+
+.academic__courses {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 5rem;
+}
+.academic__courses__box {
+	display: flex;
+	width: calc((100% - 10rem) / 4);
+	height: 230px;
+	margin: 0;
+	text-align: center;
+	background: white;
+}
+
+.academic__courses__list {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2.5rem;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+}
+.academic__courses__item__img {
+	width: 190px;
+	height: 130px;
+	text-align: center;
+	padding: 0;
+}
+.academic__courses__item__title {
+	text-align: center;
+}
+
+.academic__courses__item__subtitle {
+	text-align: center;
+	margin-top: 0;
+}
+.academic__courses__item__subtitle p {
+	margin: 0;
+}
 /* experiencia*/
 
 section.experience {
+	width: 100%;
+	margin-top: 5rem;
+	/* background: #61b3f2; */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
+.experience__section__title {
+	text-align: center;
+	font-size: 1.5em;
+	color: var(--cor-de-link);
+}
+
+.experience__box {
+	width: 100%;
+	margin-top: 5rem;
+}
+
+.experience__title {
+}
+
+.experience__img {
+	width: 50%;
+}
+
+.experiencia__botao--repo {
+	border-radius: 10px;
+	background: var(--color6);
+
+	color: var(--cor-de-fundo);
+	padding: 10px;
+	font-size: 1rem;
+	border-color: transparent;
+	text-transform: uppercase;
+}
+
+.experience__botao--demo {
+	border-radius: 10px;
+	background: var(--color6);
+	color: var(--cor-de-fundo);
+	padding: 10px;
+	font-size: 1rem;
+	border-color: transparent;
+}
 /*Contacto*/
 
-section.formcontato {
+.formcontato {
+	display: flex;
 }
 
+.formcontato__contacto {
+	/* background: #495159; */
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 5rem;
+}
+
+.formcontato__text {
+	text-align: center;
+}
+.formcontato__form {
+	display: flex;
+	flex-direction: column;
+}
+.formcontato__input {
+	margin: 1rem 0 0;
+	padding: 1rem;
+}
+
+.formcontato__textarea {
+	margin: 1rem 0 0;
+	padding: 1rem;
+}
+
+.formcontato__botao {
+	margin: 1rem 0 0;
+	padding: 1rem;
+}
 /*footeer*/
 
 section.footer {
