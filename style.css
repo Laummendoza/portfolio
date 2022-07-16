@@ -374,6 +374,11 @@ section.experience {
 
 section.footer {
 }
+.footer__rodape {
+	text-align: center;
+	margin-top: 2rem;
+	padding: 2rem;
+}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
