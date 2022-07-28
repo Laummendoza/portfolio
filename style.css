@@ -86,22 +86,37 @@ https://en.bem.info/methodology/quick-start/*/
 .menu__nav {
 	/* background: #9c690a; */
 	margin-right: 5rem;
+	display: flex;
+	min-width: 600px;
 }
 .menu__list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width: 45vw;
+	padding-left: 0;
+
 	/* background: #cde36b; */
 }
 
 .menu__list__item {
 	justify-content: space-between;
 	margin-right: 1rem;
+	padding: 0;
+	min-width: 90px;
+	text-align: center;
+}
+
+.menu__list__item:hover {
+	font-weight: bold;
 }
 
 .menu__list__item:last-child {
 	font-weight: 700;
+}
+
+.menu__button {
+	display: none;
 }
 
 /*Sección Title*/
@@ -193,6 +208,12 @@ https://en.bem.info/methodology/quick-start/*/
 	background: var(--cor-de-fundo);
 	width: calc((100% - 10rem) / 4);
 	padding-top: 10%;
+	transition: all 0.8s ease;
+}
+
+.skills__box:hover {
+	transform: translateY(-50px);
+	transform: translateY(-50px);
 }
 
 .skills__name {
@@ -298,7 +319,10 @@ section.experience {
 	flex-direction: column;
 	text-align: center;
 }
-
+.experience h2 {
+	font-size: 20px;
+	font-weight: normal;
+}
 .experience__section__title {
 	text-align: center;
 	font-size: 1.5em;
@@ -320,12 +344,17 @@ section.experience {
 .experiencia__botao--repo {
 	border-radius: 10px;
 	background: var(--color6);
-
 	color: var(--cor-de-fundo);
 	padding: 10px;
 	font-size: 1rem;
 	border-color: transparent;
-	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+}
+
+.experiencia__botao--repo:hover {
+	cursor: pointer;
+	background: #3d72d6;
 }
 
 .experience__botao--demo {
@@ -340,13 +369,15 @@ section.experience {
 
 .formcontato {
 	display: flex;
+	background: var(--cor-de-fundo);
+
+	margin-top: 5rem;
 }
 
 .formcontato__contacto {
 	/* background: #495159; */
 	width: 50%;
 	margin: 0 auto;
-	padding-top: 5rem;
 }
 
 .formcontato__text {
@@ -359,44 +390,122 @@ section.experience {
 .formcontato__input {
 	margin: 1rem 0 0;
 	padding: 1rem;
+	border-radius: 5px;
+	border: 0;
+	border-color: none;
+	box-shadow: 5px 5px 2px rgb(77, 71, 75, 0.5);
 }
 
 .formcontato__textarea {
 	margin: 1rem 0 0;
 	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 5px 5px 2px rgb(77, 71, 75, 0.5);
 }
 
 .formcontato__botao {
-	margin: 1rem 0 0;
+	/* margin: 1rem 0 0;
 	padding: 1rem;
+	border-radius: 5px;
+	border: 0;
+	background: #948f93;
+	font-weight: 700;
+	font-size: 20px; */
+
+	border-radius: 10px;
+	background: var(--color6);
+	margin: 1rem 0 0;
+	color: var(--cor-de-fundo);
+	padding: 10px 15px 10px 15px;
+	font-size: 1rem;
+	border-color: transparent;
+	font-weight: 700;
+	width: fit-content;
+	align-self: center;
 }
+
+.formcontato__botao:hover {
+	cursor: pointer;
+	background: #3d72d6;
+}
+
 /*footeer*/
 
 section.footer {
 }
 .footer__rodape {
 	text-align: center;
-	margin-top: 2rem;
+	font-size: 1rem;
+
 	padding: 2rem;
+	background: var(--cor-de-fundo);
+	padding-top: 2rem;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	/* Menú */
+	.menu {
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		position: fixed;
+		display: block;
+		background-color: var(--color6);
+	}
 
-	/*title*/
+	.menu__list {
+		display: block;
+		height: 100%;
+		margin: 0;
+	}
 
-	/*Skills*/
+	.menu__list__item {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding: 30px;
+		margin: 0;
+		border-bottom: 1px solid var(--color5);
+	}
 
-	/*Hobbies*/
+	.menu__list__item a {
+		color: var(--cor-de-fundo);
+	}
 
-	/*Formación Académica*/
+	.menu__nav {
+		display: flex;
 
-	/*Experiencia Profesional*/
+		height: 100%;
+	}
+
+	.menu__title {
+		display: none;
+	}
+
+	.menu__button {
+		background: var(--color6);
+		padding: 30px;
+		border-bottom: 1px solid var(--color5);
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu__button:hover {
+		cursor: pointer;
+	}
 }
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
 
 /*Mobile*/
 @media (min-width: 425px) {

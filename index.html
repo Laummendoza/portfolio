@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, maximum-scale=1.0, minimun-scale=1.0, initial-scale=1.0"
+		/>
 		<!-- Referencia de la hoja de estilo de Css -->
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,20 +28,29 @@
 			href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<title>Laura Mendoza portafolio</title>
 	</head>
+
 	<body>
 		<!-- Sección del Menú  -->
 		<div class="tudo">
 			<section class="menu">
 				<header class="menu__header">
 					<!-- <img src="assets\vector.png"> -->
-					<h3 class="menu__title">Mendoza Laura Malen</h3>
+					<h3 class="menu__title">Laura M. Mendoza</h3>
 				</header>
+
+				<div class="menu__button" id="menu__btn">
+					<a href="#" class="menu__button__bt">
+						<i class="fa-solid fa-bars" style="color: #fafafa"></i>
+					</a>
+				</div>
+
 				<nav class="menu__nav">
 					<ul class="menu__list">
-						<li class="menu__list__item"><a href="#sobre-mi">About me</a></li>
-						<li class="menu__list__item"><a href="#skills">Skills</a></li>
+						<li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+						<li class="menu__list__item"><a href="#skills">Habilidades</a></li>
 						<li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
 						<li class="menu__list__item"><a href="#formacion">Formación</a></li>
 						<li class="menu__list__item"><a href="#xp">Proyectos</a></li>
@@ -55,10 +67,10 @@
 						<h2 class="title__bio">Soy Lau Mendoza</h2>
 						<h2>Software Engineer</h2>
 						<h3 class="title__subsection">
-							Actualmente estoy participando del proyecto ONE en Alura Latam con
-							el objetivo de conquistar mi primer empleo IT. Creo en las
-							oportunidades y en la transformacion de nuestra realidad a partir
-							del trabajo diario
+							Actualmente soy Principiante del proyecto ONE en Alura Latam con
+							el objetivo de conquistar mi primer empleo IT. Tengo una historia
+							para contar. Creo en las oportunidades y en la transformacion de
+							nuestra realidad a partir del trabajo diario.
 						</h3>
 						<ul class="title__network">
 							<!-- Pon los enlaces de tus redes sociales favoritas -->
@@ -257,7 +269,7 @@
 					/>
 					<div class="experience__info-container">
 						<h2 class="experience__title">
-							Pagina web, reproduccion de podcasts
+							Reproduccion de podcasts. Utilizacion de meta-tags. Responsive.
 						</h2>
 						<h3 class="experience__text">Desafio SummerHack</h3>
 						<div class="experience__description">
@@ -271,11 +283,11 @@
 									</button></a
 								></span
 							>
-							<span class="experience__demo"
+							<!-- <span class="experience__demo"
 								><a href=""
 									><button class="experience__botao--demo">Ver demo</button></a
 								></span
-							>
+							> -->
 						</div>
 					</div>
 				</div>
@@ -288,7 +300,7 @@
 					/>
 					<div class="experience__info-container">
 						<h2 class="experience__title">
-							Pagina clon. Practica de Booostrap.
+							Pagina clon. Utilizacion de Booostrap.
 						</h2>
 						<h3 class="experience__text">Desafio SummerHack</h3>
 						<div class="experience__description">
@@ -302,11 +314,11 @@
 									</button></a
 								></span
 							>
-							<span class="experience__demo"
+							<!-- <span class="experience__demo"
 								><a href=""
 									><button class="experience__botao--demo">Ver demo</button></a
 								></span
-							>
+							> -->
 						</div>
 					</div>
 				</div>
@@ -317,7 +329,9 @@
 						src="assets\img-proyecto-portfolio2.png"
 					/>
 					<div class="experience__info-container">
-						<h2 class="experience__title">Copia Landing page Disney</h2>
+						<h2 class="experience__title">
+							Clon Landing page Disney. Vanilla CSS.
+						</h2>
 						<h3 class="experience__text">Desafio SummerHack</h3>
 						<div class="experience__description">
 							<!-- Pon el enlace del proyecto en Github o GithubPages -->
@@ -327,11 +341,6 @@
 									><button class="experiencia__botao--repo">
 										Repositorio
 									</button></a
-								></span
-							>
-							<span class="experience__demo"
-								><a href=""
-									><button class="experience__botao--demo">Ver demo</button></a
 								></span
 							>
 						</div>
@@ -345,7 +354,9 @@
 						src="assets\img-proyecto-portfolio3.png"
 					/>
 					<div class="experience__info">
-						<h2 class="experience__title">Encriptador de texto</h2>
+						<h2 class="experience__title">
+							Encriptador de texto. Java script. Responsive.
+						</h2>
 						<h3 class="experience__text">Challenge Alura</h3>
 						<div class="experience__description">
 							<!-- Pon el enlace del proyecto en Github o GithubPages -->
@@ -357,11 +368,11 @@
 									</button></a
 								></span
 							>
-							<span class="experience__demo"
+							<!-- <span class="experience__demo"
 								><a href=""
 									><button class="experience__botao--demo">Ver demo</button></a
 								></span
-							>
+							> -->
 						</div>
 					</div>
 				</div>
@@ -385,7 +396,7 @@
 								class="formcontato__input"
 								type="text"
 								name="nombre"
-								placeholder="Nombre"
+								placeholder="Nombre y apellido"
 							/>
 							<input
 								class="formcontato__input"
@@ -397,7 +408,7 @@
 								class="formcontato__input"
 								type="text"
 								name="asunto"
-								placeholder="Assunto"
+								placeholder="Asunto"
 							/>
 							<textarea
 								class="formcontato__textarea"
@@ -423,6 +434,8 @@
 			</section>
 		</div>
 		<!-- Script del documento JavaScript -->
+
+		<script src="menu.js"></script>
 		<script src="validacion.js"></script>
 	</body>
 </html>
