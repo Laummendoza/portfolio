@@ -452,7 +452,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 		width: 80%;
 		height: 100%;
 		margin: 0;
-		position: fixed;
+		position: relative;
 		display: block;
 		background-color: var(--color6);
 	}
@@ -508,7 +508,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Experiencia Profesional*/
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
+	.menu__button {
+		justify-content: flex-start;
+	}
+
 	/*Menu*/
 
 	/*Titulo*/
