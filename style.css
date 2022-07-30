@@ -118,6 +118,9 @@ https://en.bem.info/methodology/quick-start/*/
 .menu__button {
 	display: none;
 }
+.menu__title {
+	min-width: 223px;
+}
 
 /*Sección Title*/
 
@@ -498,6 +501,30 @@ Utiliza las referencias de los breakpoints @media abajo */
 	}
 	.menu__button:hover {
 		cursor: pointer;
+	}
+
+	/* sobre mi */
+
+	.title__div {
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+
+	.title__bio {
+		text-align: center;
+	}
+
+	.title__network {
+		justify-content: center;
+	}
+	.about__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+	.about__paragraph:nth-child(1) {
+		padding-right: 4rem;
 	}
 }
 
