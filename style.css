@@ -148,6 +148,10 @@ https://en.bem.info/methodology/quick-start/*/
 	font-family: var(--font);
 }
 
+.title__bio__mobile {
+	display: none;
+}
+
 .title__subsection {
 	font-weight: 300;
 	color: var(--color4);
@@ -505,7 +509,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 	/* sobre mi */
 
-	.title__div {
+	.title__bio__mobile {
 		flex-direction: column;
 		margin-top: 2rem;
 	}
@@ -533,5 +537,25 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (max-width: 425px) {
 	.menu__button {
 		justify-content: flex-start;
+	}
+
+	.title__div {
+		display: block;
+		margin: 0;
+		padding-top: 2rem;
+		width: 100vw;
+		text-align: center;
+	}
+
+	.title__container {
+		width: 100vw;
+		text-align: center;
+	}
+
+	.about__container {
+	}
+
+	.about__paragraph:nth-child(2) {
+		display: none;
 	}
 }
