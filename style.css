@@ -289,21 +289,21 @@ https://en.bem.info/methodology/quick-start/*/
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 5rem;
+	margin-top: 3rem;
 }
 .academic__courses__box {
 	display: flex;
 	width: calc((100% - 10rem) / 4);
-	height: 230px;
-	margin: 0;
-	text-align: center;
+	min-width: 190px;
+	margin-top: 2rem;
+	justify-content: space-around;
 	background: white;
 }
 
 .academic__courses__list {
 	display: flex;
 	flex-direction: column;
-	padding-left: 2.5rem;
+	padding: 0;
 }
 
 .logo {
@@ -554,26 +554,31 @@ section.footer {
 	}
 
 	.hobbies {
-		margin-top: 3rem;
+		width: 100%;
+		background: var(--cor-de-fundo);
+		padding-top: 3rem;
+	}
+
+	.hobbies__title {
+		margin-top: 0;
+		color: var(--color4);
 	}
 
 	.hobbies__line {
 		flex-direction: row;
 		flex-wrap: wrap;
-		padding: 3rem 3rem;
+		padding: 0 3rem 3rem;
 		margin: 0;
 		background: var(--cor-de-fundo);
 	}
-	.hobbies__title {
-		margin-top: 6rem;
-	}
 
 	.hobbies__box {
-		width: 40%;
-		height: 40%;
+		width: 120px;
+		height: 120px;
 		margin-top: 3rem;
 		padding: 0;
 	}
+
 	.hobbies__box ul {
 		display: none;
 	}
@@ -585,6 +590,18 @@ section.footer {
 	}
 	.hobbies__img {
 		display: none;
+	}
+
+	.academic {
+		margin: 3rem;
+	}
+
+	.academic__courses {
+		width: 100%;
+	}
+	.academic__courses__box {
+		width: 200px;
+		margin-top: 2rem;
 	}
 }
 
@@ -632,5 +649,13 @@ section.footer {
 		width: 300px;
 		height: 200px;
 		margin-top: 2rem;
+	}
+
+	.academic__courses {
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		margin-top: 3rem;
 	}
 }
