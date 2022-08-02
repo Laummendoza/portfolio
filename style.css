@@ -218,6 +218,10 @@ https://en.bem.info/methodology/quick-start/*/
 	transition: all 0.8s ease;
 }
 
+.skills__box ul {
+	padding-left: 1rem;
+}
+
 .skills__box:hover {
 	transform: translateY(-50px);
 	transform: translateY(-50px);
@@ -255,6 +259,10 @@ https://en.bem.info/methodology/quick-start/*/
 .hobbies__img {
 	width: 20px;
 	height: 30px;
+}
+
+.hobbie__item {
+	padding-left: 1rem;
 }
 .hobbie__item__img {
 	display: none;
@@ -607,9 +615,22 @@ section.footer {
 		display: none;
 	}
 
+	.skills__box {
+		width: 45%;
+	}
+
 	.hobbies__line {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.hobbies__box {
+		display: block;
+		width: 300px;
+		height: 200px;
+		margin-top: 2rem;
 	}
 }
