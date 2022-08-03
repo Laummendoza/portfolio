@@ -79,13 +79,10 @@ https://en.bem.info/methodology/quick-start/*/
 	align-items: center;
 	justify-content: space-between;
 	width: 18%;
-	/* background: #3d6598; */
-	margin-left: 5rem;
 	margin-right: 5rem;
 }
 
 .menu__nav {
-	/* background: #9c690a; */
 	margin-right: 5rem;
 	display: flex;
 	min-width: 600px;
@@ -121,7 +118,7 @@ https://en.bem.info/methodology/quick-start/*/
 	display: none;
 }
 .menu__title {
-	min-width: 223px;
+	min-width: 200px;
 }
 
 /*Sección Title*/
