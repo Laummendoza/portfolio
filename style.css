@@ -89,6 +89,12 @@ https://en.bem.info/methodology/quick-start/*/
 }
 #pdf {
 	font-size: 30px;
+	transition: all 0.3s ease;
+}
+
+#pdf:hover {
+	color: #3d72d6;
+	font-size: 40px;
 }
 .menu__list {
 	display: flex;
@@ -343,6 +349,7 @@ section.experience {
 .experience__section__title {
 	text-align: center;
 	font-size: 1.5em;
+	font-weight: 700;
 	color: var(--cor-de-link);
 }
 
@@ -662,5 +669,9 @@ section.footer {
 
 		align-items: center;
 		margin-top: 3rem;
+	}
+
+	.experience__img {
+		width: 300px;
 	}
 }
