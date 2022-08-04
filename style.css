@@ -73,23 +73,21 @@ https://en.bem.info/methodology/quick-start/*/
 	background: whitesmoke;
 }
 .menu__nav__desktop {
-	background: #0e1c36;
 	width: 100%;
-	height: 15vh;
+	height: 12vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
 	position: fixed;
 	background: whitesmoke;
-	margin: 0;
 }
 
 .menu__list__desktop {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 60%;
+	min-width: 60%;
 	padding-left: 0;
 }
 
@@ -494,6 +492,9 @@ section.footer {
 		display: block;
 		background-color: var(--color6);
 	}
+	.menu__nav__desktop {
+		display: none;
+	}
 	#pdf {
 		display: none;
 	}
@@ -633,6 +634,10 @@ section.footer {
 /* Mobile*/
 
 @media (max-width: 425px) {
+	.menu__nav__desktop {
+		display: none;
+	}
+
 	.menu__button {
 		justify-content: flex-start;
 	}
