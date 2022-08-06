@@ -29,6 +29,7 @@
 			rel="stylesheet"
 		/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 		<title>Laura Mendoza portafolio</title>
 	</head>
 
@@ -417,30 +418,43 @@
 							Complete el siguiente formulario y me pondré en contacto con usted
 							lo antes posible.
 						</h3>
-						<form class="formcontato__form" name="form">
+
+						<form
+							class="formcontato__form"
+							name="form"
+							action="https://formsubmit.co/d2775e1109711891682db64ae30d7f9a"
+							method="post"
+							id="formulario"
+						>
 							<input
 								class="formcontato__input"
 								type="text"
 								name="nombre"
-								placeholder="Nombre y apellido"
+								placeholder="Nombre y Apellido"
+								id="formulario__nombre"
 							/>
 							<input
 								class="formcontato__input"
 								type="email"
 								name="email"
-								placeholder="E-mail"
+								placeholder="nombre@ejemplo.com"
+								autocomplete="email"
+								id="formulario__email"
 							/>
+
 							<input
 								class="formcontato__input"
 								type="text"
 								name="asunto"
 								placeholder="Asunto"
+								id="formulario__asunto"
+								required
 							/>
 							<textarea
 								class="formcontato__textarea"
 								rows="5"
 								cols="40"
-								id="mensagem"
+								id="formulario__mensaje"
 								name="mensaje"
 								placeholder="Mensaje"
 							></textarea>
@@ -462,6 +476,6 @@
 		<!-- Script del documento JavaScript -->
 
 		<script src="menu.js"></script>
-		<script src="validacion.js"></script>
+		<script src="validacion-form.js"></script>
 	</body>
 </html>
