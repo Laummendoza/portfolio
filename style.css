@@ -561,9 +561,16 @@ section.footer {
 		text-align: center;
 	}
 
-	.title__network {
-		justify-content: center;
+	.title__subsection {
+		text-align: left;
+		padding-left: 2rem;
 	}
+
+	.title__network {
+		justify-content: flex-start;
+		padding-left: 2rem;
+	}
+
 	.about__container {
 		display: flex;
 		flex-direction: row;
@@ -668,7 +675,15 @@ section.footer {
 		text-align: center;
 	}
 
+	.about {
+		padding: 0;
+	}
+
 	.about__container {
+		margin-left: 2rem;
+	}
+	.about__paragraph:nth-child(1) {
+		padding: 0;
 	}
 
 	.about__paragraph:nth-child(2) {
@@ -704,5 +719,9 @@ section.footer {
 
 	.experience__img {
 		width: 300px;
+	}
+	.formcontato__contacto {
+		width: 100%;
+		margin: 0 2rem;
 	}
 }
