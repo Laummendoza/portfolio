@@ -91,32 +91,37 @@ https://en.bem.info/methodology/quick-start/*/
 	padding-left: 0;
 }
 
-.menu__header {
+/* .menu__header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	width: 18%;
 	margin-right: 5rem;
-}
+} */
 
 .menu__nav {
 	margin-right: 5rem;
 	display: flex;
 	min-width: 600px;
 }
-#pdf {
-	font-size: 30px;
+.up__button {
+	display: block;
+	font-size: 20px;
 	transition: all 0.3s ease;
-	background: rgba(14, 28, 54, 0.5);
+	background: rgb(14, 28, 54);
 	color: #f5f5f5;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	border-radius: 10px;
+	position: fixed;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	bottom: 0;
+	right: 0;
 }
 
-#pdf:hover {
-	color: var(--color5);
-	font-size: 40px;
+.up__button:hover {
+	background: rgba(14, 28, 54, 0.5);
 }
 .menu__list {
 	display: flex;
@@ -185,7 +190,6 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__network {
-	/* background: #a1e8cc; */
 	display: flex;
 	justify-content: flex-start;
 	padding-left: 0;
@@ -194,6 +198,14 @@ https://en.bem.info/methodology/quick-start/*/
 
 .title__network__item {
 	margin-right: 30px;
+	font-size: 22px;
+	background: rgb(245, 245, 245);
+	border-radius: 10px;
+	padding: 10px;
+	transition: all 0.3s;
+}
+.title__network__item:hover {
+	background: rgba(245, 245, 245, 0.5);
 }
 
 .title__network__item a {
@@ -505,9 +517,6 @@ section.footer {
 	.menu__nav__desktop {
 		display: none;
 	}
-	#pdf {
-		display: none;
-	}
 
 	.menu__list {
 		display: block;
@@ -658,9 +667,6 @@ section.footer {
 	.menu__button {
 		justify-content: flex-start;
 	}
-	#pdf {
-		display: none;
-	}
 
 	.title__div {
 		display: block;
@@ -679,9 +685,15 @@ section.footer {
 		padding: 0;
 	}
 
+	.about__title {
+		margin-left: 2rem;
+		padding-top: 2rem;
+	}
+
 	.about__container {
 		margin-left: 2rem;
 	}
+
 	.about__paragraph:nth-child(1) {
 		padding: 0;
 	}
@@ -723,5 +735,27 @@ section.footer {
 	.formcontato__contacto {
 		width: 100%;
 		margin: 0 2rem;
+	}
+	.formcontato__subtext__1 {
+		display: none;
+	}
+
+	.title__network__mobile {
+		bottom: 0;
+		right: 0;
+		padding-bottom: 5rem;
+
+		z-index: 3;
+		display: block;
+		position: fixed;
+	}
+
+	.footer__rodape {
+		text-align: left;
+	}
+	.up__button {
+		font-size: 15px;
+		margin-right: 0;
+		margin-bottom: 35px;
 	}
 }
