@@ -22,7 +22,7 @@ coloque nas sessões indicadas*/
 
 body {
 	box-sizing: border-box;
-	/* background-color: var(--cor-de-fundo); */
+
 	font-family: var(--font);
 	margin: 0;
 	padding: 0;
@@ -56,9 +56,8 @@ https://en.bem.info/methodology/quick-start/*/
 
 .tudo {
 	position: absolute;
-	background-image: url(assets/background-degrade.jpg);
+	background-image: url(assets/background-computer.jpg);
 	background-position: start;
-	background-size: cover;
 }
 
 /*Sección Menu*/
@@ -178,6 +177,7 @@ https://en.bem.info/methodology/quick-start/*/
 .title__bio {
 	font-size: 50px;
 	font-family: var(--font);
+	color: var(--cor-de-fundo);
 }
 
 .title__bio__mobile {
@@ -186,7 +186,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 .title__subsection {
 	font-weight: 300;
-	color: var(--color4);
+	color: var(--cor-de-fundo);
 }
 
 .title__network {
@@ -213,7 +213,7 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__container h2 {
-	color: #0b0b0b;
+	color: var(--cor-de-fundo);
 }
 /*Sección About*/
 
@@ -371,25 +371,23 @@ https://en.bem.info/methodology/quick-start/*/
 section.experience {
 	width: 100%;
 	margin-top: 5rem;
-	/* background: #61b3f2; */
+	background-color: rgba(42, 41, 41, 0.9);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
-.experience h2 {
-	font-size: 20px;
-	font-weight: normal;
-}
+
 .experience__section__title {
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: 700;
-	color: var(--cor-de-link);
+	color: var(--cor-de-fundo);
 }
 
 .experience__box {
 	width: 100%;
-	margin-top: 5rem;
+	margin-top: 2rem;
+	color: var(--cor-de-fundo);
 }
 
 .experience__title {
@@ -401,7 +399,7 @@ section.experience {
 
 .experiencia__botao--repo {
 	border-radius: 10px;
-	background: var(--color6);
+	background: var(--color-icono);
 	color: var(--cor-de-fundo);
 	padding: 10px;
 	font-size: 1rem;
@@ -423,19 +421,21 @@ section.experience {
 	font-size: 1rem;
 	border-color: transparent;
 }
+
+.experience__description:last-child {
+	padding-bottom: 2rem;
+}
 /*Contacto*/
 
 .formcontato {
 	display: flex;
-	background: var(--cor-de-fundo);
-
-	margin-top: 5rem;
+	background: rgb(197, 197, 59);
 }
 
 .formcontato__contacto {
-	/* background: #495159; */
 	width: 50%;
 	margin: 0 auto;
+	padding-top: 5rem;
 }
 
 .formcontato__text {
@@ -444,6 +444,7 @@ section.experience {
 .formcontato__form {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 2rem;
 }
 .formcontato__input {
 	margin: 1rem 0 0;
@@ -491,16 +492,13 @@ section.experience {
 
 /*footeer*/
 
-section.footer {
-}
+
 .footer__rodape {
 	text-align: center;
 	font-size: 1rem;
-
 	padding: 2rem;
 	background: var(--cor-de-fundo);
-	padding-top: 2rem;
-}
+	
 
 /* Responsive */
 
